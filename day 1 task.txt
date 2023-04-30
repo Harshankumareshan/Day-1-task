@@ -1,0 +1,72 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2?
+2.Write a blog about objects and its internal representation in Javascript
+
+1. ANSWER :-
+
+HTTP stands for hyper text transfer protocal
+It is used in client-server communication. 
+By using the HTTP user sends the request to the server & the server sends the response back to the user.
+
+
+HTTP1.1  - 
+   -HTTP/1.1 it was created in 1997
+   -HTTP/1.1 transfer all the requests & responses in the plain text message form.
+   -There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources
+   -It uses requests resource Inlining for use getting multiple pages
+   -It compresses data by itself.
+
+
+HTTP2  -
+    -HTTP/2 it was created in 2015
+    -HTTP/2 works on the binary framing layer instead of textual that converts all the messages in binary format.
+    -It allows multiplexing so one TCP connection is required for multiple requests.
+    -It uses PUSH frame by server that collects all multiple pages 
+    -It uses HPACK for data compression
+
+
+2. ANSWER :-
+
+A JavaScript object is a collection of named values having state and behavior (properties and method)”.
+ For example: 
+        Person, car, pen, Washing Machine etc.
+let Take this case of cars. 
+All cars have the same properties, but the property values differ from car to car.
+Let’s have an example of my favorite merc car and list out its properties(Features):
+
+Make: Mercedes 
+Model: C-Class
+Color: White
+Fuel: Diesel
+Weight: 850kg
+Mileage: 8Kmpl
+Rating: 4.5
+
+1.Objects:
+The following code assigns a value (Mercedes) to a variable named car:
+var car = "Mercedes";
+Objects are variables too. But objects can contain many values.
+The following code assigns many values like (Mercedes, C-class, White and etc) to a variable named Car:
+var car = {Make: “Mercedes”, Model: “C-Class”, Color: “White”, Fuel: Diesel, Weight: “850kg”, Mileage: “8Kmpl”, Rating: 4.5};
+The values are written as name:value pairs (name and value separated by a colon).
+Syntax:
+var <object-name> = {key1: value1, key2: value2,... keyN: valueN};
+So, conclusion and definition for JS objects is “JavaScript objects are containers for named values”.
+
+2.Object Properties:
+The name:values pairs (in JavaScript objects) are called properties.
+ 
+     property       property value
+
+    make          -   mercedes
+    Model         -   c-class
+    colour        -   white
+    Fuel          -   Diesel
+    Weight        -   850kg
+    Mileage       -   8Kmpl
+    Rating        -   4.5
+    Properties are the values associated with a JavaScript object”.
+
+3.objects methods:
+Methods are actions that can be performed on objects.
+Object properties can be both primitive values, other objects, and functions.
+An object method is an object property containing a function definition.
